@@ -9,6 +9,10 @@ import random
 
 ppt = ["piedra", "papel", "tijera"]
 user_option = input("piedra/papel/tijera: " )
+
+if not user_option in ppt:
+    print('esa opción no es valida')
+
 computer_option = random.choice(ppt)
 
 if user_option == computer_option:
